@@ -15,8 +15,6 @@ function fetchConfession() {
       let lastElement = jsondata[jsondata.length - 1];
       let name = "Name: " + lastElement.Name;
       let confession = "Confession: " + lastElement.Confession;
-      document.getElementById('name').innerHTML = name;
-      document.getElementById('confession').innerHTML = confession;
       console.log(name);
       console.log(confession);
     }
@@ -46,8 +44,6 @@ setInterval(function() {
             let lastElement = jsondata[jsondata.length - 1];
             let name = "Name: " + lastElement.Name;
             let confession = "Confession: " + lastElement.Confession;
-            document.getElementById('name').innerHTML = name;
-            document.getElementById('confession').innerHTML = confession;
             console.log(name);
             console.log(confession);
           }
@@ -59,7 +55,6 @@ setInterval(function() {
 
   request.send();
 }, 10000);
-
 
 /* fetchConfession();
 var fetchInterval = setInterval(fetchConfession, 5000); */
