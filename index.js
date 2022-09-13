@@ -1,6 +1,7 @@
 import fetch from "node-fetch";
 import XMLHttpRequest from "xhr2";
 const url = "https://opensheet.elk.sh/1HRo8seXlonLZgRBWDOvAIjhEijzC-hnJJfvl3IRO4tQ/1";
+var port = process.env.PORT || 8080;
 
 function fetchConfession() {
   /// call your function here
@@ -52,7 +53,8 @@ setInterval(function() {
 
   request.send();
 }, 10000);
-
+var server=app.listen(port,function() {
+console.log("app running on port 8080"); });
 
 
 /* fetchConfession();
