@@ -1,5 +1,5 @@
 import fetch from "node-fetch";
-var XMLHttpRequest = require('xhr2');
+var XMLHttpRequest = "xhr2";
 var xhr = new XMLHttpRequest();
 
 const url = "https://opensheet.elk.sh/1HRo8seXlonLZgRBWDOvAIjhEijzC-hnJJfvl3IRO4tQ/1";
