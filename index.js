@@ -1,7 +1,6 @@
 import fetch from "node-fetch";
 import XMLHttpRequest from "xhr2";
 const url = "https://opensheet.elk.sh/1HRo8seXlonLZgRBWDOvAIjhEijzC-hnJJfvl3IRO4tQ/1";
-.listen(process.env.PORT || 5000)
 
 function fetchConfession() {
   /// call your function here
