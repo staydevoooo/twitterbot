@@ -1,6 +1,4 @@
 import fetch from "node-fetch";
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-
 
 const url = "https://opensheet.elk.sh/1HRo8seXlonLZgRBWDOvAIjhEijzC-hnJJfvl3IRO4tQ/1";
 
