@@ -1,6 +1,11 @@
 import fetch from "node-fetch";
 import XMLHttpRequest from "xhr2";
-import path from "path";
+
+import path from 'path';
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 import express from "express";
 var app = express();
 
