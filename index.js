@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 import express from "express";
 var app = express();
 
-import jsdom = from "jsdom";
+import jsdom from "jsdom";
 var JSDOM = jsdom.JSDOM;
 global.document = new JSDOM(html).window.document;
 
