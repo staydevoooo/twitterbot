@@ -71,5 +71,25 @@ app.get('*', (req, res) =>{
 });
 app.listen(process.env.PORT || 8080);
 
-/* fetchConfession();
-var fetchInterval = setInterval(fetchConfession, 5000); */
+// text to image
+
+var tCtx = document.getElementById('textCanvas').getContext('2d'),
+  imageElem = document.getElementById('image');
+
+var font = '400 50px "Fredoka One script=all rev=2", "Adobe Blank"';
+
+document.fonts.load(font)
+  .then(function() {
+    document.getElementById('text').addEventListener('keyup', function() {
+      // Set it before getting the size
+      tCtx.font = font
+      // this will reset all our context's properties
+      tCtx.canvas.width = tCtx.measureText(this.value).width;
+      // so we need to set it again
+      tCtx.font = font;
+      // set the color only now
+      tCtx.fillStyle = '#A0A';
+      tCtx.fillText(this.value, 0, 50);
+      imageElem.src = tCtx.canvas.toDataURL();
+    }, false);
+  });
