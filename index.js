@@ -9,6 +9,10 @@ const __dirname = path.dirname(__filename);
 import express from "express";
 var app = express();
 
+import jsdom = from "jsdom";
+var JSDOM = jsdom.JSDOM;
+global.document = new JSDOM(html).window.document;
+
 const url = "https://opensheet.elk.sh/1HRo8seXlonLZgRBWDOvAIjhEijzC-hnJJfvl3IRO4tQ/1";
 function fetchConfession() {
 	/// call your function here
