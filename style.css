@@ -1,0 +1,21 @@
+.xx {
+  font-family: "Fredoka One script=all rev=2", "Adobe Blank";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+@font-face {
+  font-family: 'Fredoka One script=all rev=2';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/l/font?kit=k3kUo8kEI-tA1RRcTZGmTmHEG9St0C3d1om8Mz6slqBKRtvjzUJ6xAJaGHLTbv9tHVEq-h1ylCtXSeDBENILlzkfzUJOiM594gqLtnzccnJfhpQc-ZP_ud1_NbotCXKqzPs_SH7xk6cjQyW2echUD_r7vTfZ5gJBot49AddTHjLYLXysgiMDRZKV&skey=fac42792a60c2aba&v=v5) format('woff2');
+}
+
+canvas {
+  border: 1px black solid;
+}
+
+#textCanvas {
+  display: none;
+}
